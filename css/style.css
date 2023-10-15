@@ -1,0 +1,115 @@
+@font-face {
+    font-family: 'Tenada';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Tenada.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    font-size: 100px;
+    line-height: 500px;
+    overflow: hidden;
+    margin-bottom: 8px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.container > ul{
+    transition: 1s;
+    height: 100vh;
+    display: flex;
+}
+
+/* .container li {
+    width: 100%;
+    height: 500px;
+} */
+
+.slide_text {
+    position: absolute;
+    bottom: 150px;
+    color: #fff;
+    line-height: 50px;
+    font-family: 'Tenada';
+    font-size: 50px;
+    margin-left: 350px;
+}
+
+.tag_text {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.buttons {
+    width: 1920px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+}
+
+.buttons > button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.buttons .prev {
+    position: relative;
+    margin: 0 50px;
+}
+
+.buttons .next {
+    position: absolute;
+    margin: 0 50px;
+    right: 0;
+}
+
+.buttons .prev::after,
+.buttons .next::after {
+    content: '';
+    width: 24px;
+    height: 24px;
+    border-top: 4px solid #fff;
+    border-right: 4px solid #fff;
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 15%;
+}
+
+.buttons .prev::after {
+    transform: rotate(-135deg);
+}
+
+.buttons .next::after {
+    transform: rotate(50deg);
+}
+
+.dot-container{
+    width: 200px;
+    height: 20px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.dot{
+    width: 30px;
+    height: 5px;
+    border-radius: 15%;
+    background-color: rgb(141, 141, 141);
+    cursor: pointer;
+}
+
+.active{
+    background-color: #fff;
+}
