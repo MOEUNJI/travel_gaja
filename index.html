@@ -11,9 +11,34 @@
 </head>
 
 <body>
-    <section class="slide_container">
-        <div class="container">
-            <ul class="slider">
+    <section class="main_slide_area">
+        <header class="header">
+            <ul class="header_menu">
+                <li>
+                    <a href="#best">
+                        BEST여행지
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        테마여행
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        패키지여행
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        여행리뷰
+                    </a>
+                </li>
+                <!-- menuname 나중에 변경 -->
+            </ul>
+        </header>
+        <div class="slider_container">
+            <ul class="slider_contents">
                 <li class="slider1">
                     <img src="./img/jp_slide.png" alt="일본_슬라이드">
                     <div class="slide_text">
@@ -55,10 +80,154 @@
             <button class="prev"></button>
             <button class="next"></button>
         </div>
-        <div class="dot-container">
+        <div class="dot_container">
             <!-- js로 dot 생성 -->
         </div>
     </section>
+
+    <section class="best area" id="best">
+        <h2 class="area_main_text">
+            지금 가장 인기있는
+            <br>
+            BEST 6 여행가자!
+        </h2>
+        <p class="area_sub_text">
+            요즘 핫한 여행지를 한눈에!
+        </p>
+        <div class="best_content_container">
+            <article class="mb_50">
+                <p class="best_content_name">일본</p>
+                <img src="./img/best_jp.png" alt="">
+                <div class="best_content_text">
+                    <p>삿포로
+                        <span>#겨울왕국 #효도여행</span>
+                    </p>
+                    <p>홋카이도에 위치한 설국이라 불리우는 눈덮인 도시</p>
+                </div>
+            </article>
+            <article class="mb_50">
+                <p class="best_content_name">인도네시아</p>
+                <img src="./img/best_bali.png" alt="">
+                <div class="best_content_text">
+                    <p>발리
+                        <span>#원숭이숲 #멋진숙소</span>
+                    </p>
+                    <p>세계 최고의 휴양지, 허니문 여행지 신들의 섬 발리</p>
+                </div>
+            </article class="mb_50">
+            <article>
+                <p class="best_content_name">태국</p>
+                <img src="./img/best_bkk.png" alt="">
+                <div class="best_content_text">
+                    <p>방콕
+                        <span>#쇼핑 #왕궁투어</span>
+                    </p>
+                    <p>태국의 역사와 경제, 문화의 중심지인 태국의 수도</p>
+                </div>
+            </article>
+            <article>
+                <p class="best_content_name">북마리아나제도</p>
+                <img src="./img/best_saipan.png" alt="">
+                <div class="best_content_text">
+                    <p>사이판
+                        <span>#세계3대다이빙포인트 #수중엑티비티</span>
+                    </p>
+                    <p>다양한 해양스포츠를 즐길 수 있는 관광지</p>
+                </div>
+            </article>
+            <article>
+                <p class="best_content_name">호주</p>
+                <img src="./img/best_otl.png" alt="">
+                <div class="best_content_text">
+                    <p>시드니
+                        <span>#골드코스트 #오페라하우스</span>
+                    </p>
+                    <p>호주에서 가장 큰 도시, 세계 3대 미항 도시</p>
+                </div>
+            </article>
+            <article>
+                <p class="best_content_name">프랑스</p>
+                <img src="./img/best_paris.png" alt="">
+                <div class="best_content_text">
+                    <p>파리
+                        <span>#낭만여행 #예술의도시</span>
+                    </p>
+                    <p>예술과 낭만이 있는 세계 문화의 중심지 파리</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="tema" id="tema">
+        <div class="area">
+            <h2 class="area_main_text">
+                테마가 있는 여행가자!
+            </h2>
+            <p class="area_sub_text mb_50">
+                원하는 여행스타일대로 떠나요!
+            </p>
+            <!-- 탭메뉴 복사 -->
+            <div class="tema_tab_container">
+                <ul>
+                    <li class="on">
+                        <button class="tema_tab_btn tab_color_active">
+                            #부모님 모시고 가는 효도여행
+                        </button>
+                    </li>
+                    <li>
+                        <button class="tema_tab_btn">
+                            #힐링이 필요한 순간 휴양지로!
+                        </button>
+                    </li>
+                    <li>
+                        <button class="tema_tab_btn">
+                            #골퍼들 모여라! 해외 골프여행!
+                        </button>
+                    </li>
+                    <li>
+                        <button class="tema_tab_btn">
+                            #이색 동물들을 만나는 여행!
+                        </button>
+                    </li>
+                    <li>
+                        <button class="tema_tab_btn">
+                            #낭만 가득 유럽여행!
+                        </button>
+                    </li>
+                </ul>
+                <div class="tema_img_box">
+                    <ul class="tab_img_content">
+                        <li class="tab_active">
+                            <img src="./img/tab-01-01.png" alt="커피,퐁크러쉬,허니브레드">
+                            <img src="./img/tab-01-02.png" alt="커피,퐁크러쉬,허니브레드">
+                            <img src="./img/tab-01-03.png" alt="커피,퐁크러쉬,허니브레드">
+                        </li>
+                        <li>
+                            <img src="./img/tab-01-02.png" alt="커피,퐁크러쉬,허니브레드">
+                            <img src="./img/tab-01-02.png" alt="커피,퐁크러쉬,허니브레드">
+                            <img src="./img/tab-01-02.png" alt="커피,퐁크러쉬,허니브레드">
+                        </li>
+                        <li>
+                            <img src="./img/tab-01-01.png" alt="커피,퐁크러쉬,허니브레드">
+                            <img src="./img/tab-01-02.png" alt="커피,퐁크러쉬,허니브레드">
+                            <img src="./img/tab-01-03.png" alt="커피,퐁크러쉬,허니브레드">
+                        </li>
+                        <li>
+                            <img src="./img/tab-01-01.png" alt="커피,퐁크러쉬,허니브레드">
+                            <img src="./img/tab-01-02.png" alt="커피,퐁크러쉬,허니브레드">
+                            <img src="./img/tab-01-03.png" alt="커피,퐁크러쉬,허니브레드">
+                        </li>
+                        <li>
+                            <img src="./img/tab-01-01.png" alt="커피,퐁크러쉬,허니브레드">
+                            <img src="./img/tab-01-02.png" alt="커피,퐁크러쉬,허니브레드">
+                            <img src="./img/tab-01-03.png" alt="커피,퐁크러쉬,허니브레드">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script src="js/script.js"></script>
 </body>
 

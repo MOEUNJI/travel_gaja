@@ -5,7 +5,65 @@
     font-style: normal;
 }
 
-.container {
+@font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 모든 영역 공통 사용 통일 class 시작 */
+
+.area {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 120px 0;
+}
+
+.area_main_text {
+    font-family: 'Tenada';
+    font-size: 36px;
+}
+
+.area_sub_text {
+    font-family: 'NanumSquareNeo-Variable';
+    font-size: 16px;
+    margin-top: 24px;
+}
+
+.mb_50 {
+    margin-bottom: 50px;
+}
+
+/* 모든 영역 공통 사용 통일 class 끝 */
+
+
+/* 메인(시작부분) 슬라이드 영역 시작 */
+
+.main_slide_area {
+    position: relative;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 18%;
+    color: #fff;
+    z-index: 99;
+    margin: 50px 0;
+}
+
+.header_menu {
+    display: flex;
+    font-family: 'NanumSquareNeo-Variable';
+}
+
+.header_menu > li > a {
+    color: #fff;
+    padding: 0 25px;
+}
+
+.slider_container {
     width: 100%;
     height: 100vh;
     font-size: 100px;
@@ -16,16 +74,11 @@
     position: relative;
 }
 
-.container > ul{
+.slider_container > ul{
     transition: 1s;
     height: 100vh;
     display: flex;
 }
-
-/* .container li {
-    width: 100%;
-    height: 500px;
-} */
 
 .slide_text {
     position: absolute;
@@ -38,12 +91,13 @@
 }
 
 .tag_text {
-    font-size: 36px;
+    font-family: 'NanumSquareNeo-Variable';
+    font-size: 24px;
     margin-bottom: 40px;
 }
 
 .buttons {
-    width: 1920px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     position: absolute;
@@ -89,7 +143,7 @@
     transform: rotate(50deg);
 }
 
-.dot-container{
+.dot_container{
     width: 200px;
     height: 20px;
     padding: 5px;
@@ -110,6 +164,111 @@
     cursor: pointer;
 }
 
-.active{
+.slide_active{
     background-color: #fff;
+}
+
+/* 메인(시작부분) 슬라이드 영역 끝 */
+
+/* BEST 여행지 영역 시작 */
+
+.best_content_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 60px;
+}
+
+.best_content_container > article,
+.best_content_container > article > img  {
+    width: 387px;
+}
+
+.best_content_name {
+    font-family: 'NanumSquareNeo-Variable';
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.best_content_text > :first-child {
+    font-size: 20px;
+    margin: 16px 0;
+}
+
+.best_content_text > p {
+    font-family: 'NanumSquareNeo-Variable';
+    font-size: 18px;
+}
+
+.best_content_text > p > span {
+    font-size: 16px;
+    margin-left: 16px;
+}
+
+.best_content_container > article > img {
+    box-shadow: 5px 5px 10px #00000060;
+    overflow: hidden;
+    background-position: center;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.best_content_container:hover > article > img {
+    filter: brightness(0.5);
+}
+
+.best_content_container > article > img:hover {
+    /* transform: scale(1.1); */
+    filter: brightness(1.0);
+}
+
+/* BEST 여행지 영역 끝 */
+
+
+/* TEMA 여행지 영역 시작 */
+
+.tema {
+    position: relative;
+    background: #242424;
+    width: 100%;
+    color: #fff;
+}
+
+.tema_tab_container {
+    display: flex;
+}
+
+.tema_tab_btn {
+    font-family: 'NanumSquareNeo-Variable';
+    width: 324px;
+    padding: 16px 0;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #888888;
+    font-size: 20px;
+    color: #888888;
+    width: 300px;
+    text-align: left;
+}
+
+.tab_img_content li {
+    position: absolute;
+    transition: 0.4s;
+    opacity: 0;
+    display: flex;
+}
+
+.tab_img_content li > img {
+    width: 280px;
+    height: 280px;
+    margin-left: 20px;
+}
+
+.tema_img_box .tab_active {
+    opacity: 1;
+}
+
+.tab_color_active {
+    color: #fff;
+    border-bottom: 2px solid #fff;
 }
