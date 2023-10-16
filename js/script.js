@@ -130,7 +130,6 @@ setInterval(() => {
 
 
 
-
 const containerFirst = document.getElementsByClassName("tema_tab_container")[0];
 // container = 버튼들이 들어있는 ul
 const controller = containerFirst.children[0];
