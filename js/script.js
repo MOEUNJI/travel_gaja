@@ -2,7 +2,7 @@ const buttons = document.querySelector('.buttons');
 // 닷을 포함한 prev,next 를 모두 감싸는 버튼의 컨테이너
 const container = document.querySelector('.slider_container');
 // 슬라이더의 일부분만 보여주는 컨테이너
-const slider = document.querySelector('.slider_contents');
+const slider = document.querySelector('.slider_box');
 // width가 큰 모든 sliderContent가 들어있음
 const buttonContainer = document.querySelector('.dot_container');
 // dot 만들기 위한 dot 컨테이너라고 보면 됨
@@ -120,7 +120,6 @@ function moveSlider(time) {
     // 매개변수로 써줘서 인수로 time을 넣어줌(어디에 넣든 값을 바꿀 수 있도록)
     slider.style.transition = time + 'ms';
     container.children[0].style.transform = 'translateX(-' + (index * 1920) + 'px)';
-
     updateButtons();
 }
 

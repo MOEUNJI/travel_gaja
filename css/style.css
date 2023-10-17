@@ -74,7 +74,7 @@
     position: relative;
 }
 
-.slider_container > ul{
+.slider_container > ul {
     transition: 1s;
     height: 100vh;
     display: flex;
@@ -143,7 +143,7 @@
     transform: rotate(50deg);
 }
 
-.dot_container{
+.dot_container {
     width: 200px;
     height: 20px;
     padding: 5px;
@@ -156,7 +156,7 @@
     transform: translate(-50%);
 }
 
-.dot{
+.dot {
     width: 30px;
     height: 5px;
     border-radius: 15%;
@@ -164,7 +164,7 @@
     cursor: pointer;
 }
 
-.slide_active{
+.slide_active {
     background-color: #fff;
 }
 
@@ -180,7 +180,7 @@
 }
 
 .best_content_container > article,
-.best_content_container > article > img  {
+.best_content_container > article > img {
     width: 387px;
 }
 
@@ -190,7 +190,7 @@
     margin-bottom: 16px;
 }
 
-.best_content_text > :first-child {
+.best_content_text> :first-child {
     font-size: 20px;
     margin: 16px 0;
 }
@@ -217,7 +217,7 @@
     filter: brightness(0.5);
 }
 
-.best_content_container > article > img:hover {
+.best_content_container>article > img:hover {
     /* transform: scale(1.1); */
     filter: brightness(1.0);
 }
@@ -241,7 +241,7 @@
 .tema_tab_btn {
     font-family: 'NanumSquareNeo-Variable';
     width: 324px;
-    padding: 16px 0;
+    padding: 23px 0;
     background: none;
     border: none;
     border-bottom: 2px solid #888888;
@@ -261,7 +261,6 @@
 .tab_img_content li > img {
     width: 280px;
     height: 280px;
-    margin-left: 20px;
 }
 
 .tema_img_box .tab_active {
@@ -272,3 +271,75 @@
     color: #fff;
     border-bottom: 2px solid #fff;
 }
+
+/* 호버했을때 텍스트와 검은 배경 */
+
+.tema_detail_text_box {
+    margin-left: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.reservation_text {
+    width: 280px;
+    height: 280px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    z-index: 20;
+    opacity: 0;
+    line-height: 22px;
+    font-family: 'NanumSquareNeo-Variable';
+}
+
+.country_name {
+    font-family: 'Tenada';
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.reservation_text > span {
+    margin: 30px 16px;
+} 
+
+.reservation_btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 24px 16px;
+    background: #fff;
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 15px;
+    color: #000;
+    cursor: pointer;
+}
+
+.tema_detail_text_box::after {
+    content:'';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    opacity: 0;
+}
+
+.tema_detail_text_box:hover::after,
+.tema_detail_text_box:hover > .reservation_text {
+    opacity: 1;
+}
+
+
+.tema_detail_text_box:hover img{
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+/* TEMA 여행지 영역 끝 */

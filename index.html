@@ -20,7 +20,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="#tema">
                         테마여행
                     </a>
                 </li>
@@ -38,36 +38,36 @@
             </ul>
         </header>
         <div class="slider_container">
-            <ul class="slider_contents">
-                <li class="slider1">
+            <ul class="slider_box">
+                <li>
                     <img src="./img/jp_slide.png" alt="일본_슬라이드">
                     <div class="slide_text">
                         <p class="tag_text">#일본여행 #주말여행 #자유여행</p>
                         <p>가까운 인기여행지 일본으로 여행가자!</p>
                     </div>
                 </li>
-                <li class="slider2">
+                <li>
                     <img src="./img/saipan_slide.png" alt="사이판_슬라이드">
                     <div class="slide_text">
                         <p class="tag_text">#사이판여행 #엑티비티천국 #힐링여행지</p>
                         <p>힐링이 필요하다면 휴양지 사이판으로 여행가자!</p>
                     </div>
                 </li>
-                <li class="slider3">
+                <li>
                     <img src="./img/paris_slide.png" alt="파리_슬라이드">
                     <div class="slide_text">
                         <p class="tag_text">#프랑스여행 #유럽여행 #낭만가득파리</p>
                         <p>한 번쯤 가고싶은 꿈꾸던 유럽여행 파리로 여행가자!</p>
                     </div>
                 </li>
-                <li class="slider4">
+                <li>
                     <img src="./img/bkk_slide.png" alt="방콕_슬라이드">
                     <div class="slide_text">
                         <p class="tag_text">#관광객1위 #미식의나라 #도심속힐링</p>
                         <p>눈과 입이 쉴새없이 즐거운 방콕으로 여행가자!</p>
                     </div>
                 </li>
-                <li class="slider5">
+                <li>
                     <img src="./img/bali_slide.png" alt="발리_슬라이드">
                     <div class="slide_text">
                         <p class="tag_text">#요즘핫한여행지 #신혼여행 #자연속힐링</p>
@@ -159,6 +159,7 @@
     </section>
 
     <section class="tema" id="tema">
+        <!-- 배경색을 width:100% 로 깔기 위해서 div.area로 한 번 감싸줌 -->
         <div class="area">
             <h2 class="area_main_text">
                 테마가 있는 여행가자!
@@ -189,38 +190,196 @@
                             #이색 동물들을 만나는 여행!
                         </button>
                     </li>
-                    <li>
-                        <button class="tema_tab_btn">
-                            #낭만 가득 유럽여행!
-                        </button>
-                    </li>
                 </ul>
                 <div class="tema_img_box">
                     <ul class="tab_img_content">
                         <li class="tab_active">
-                            <img src="./img/tab-01-01.png" alt="커피,퐁크러쉬,허니브레드">
-                            <img src="./img/tab-01-02.png" alt="커피,퐁크러쉬,허니브레드">
-                            <img src="./img/tab-01-03.png" alt="커피,퐁크러쉬,허니브레드">
+                            <div class="tema_detail_text_box">
+                                <img src="./img/tab-01-01.png" alt="">
+                                <div class="reservation_text">
+                                    <span class="country_name">일본 삿포로</span>
+                                    <span>
+                                        피로 확 풀리는 온천에서
+                                        <br>
+                                        제대로 힐링 할 수 있는
+                                        <br>
+                                        삿포로 여행가자!
+                                        <p class="reservation_btn">예약하러가기</p>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="tema_detail_text_box">
+                                <img src="./img/tab-01-02.png" alt="">
+                                <div class="reservation_text">
+                                    <span class="country_name">태국 방콕</span>
+                                    <span>
+                                        세계 관광객 1위 여행지!
+                                        <br>
+                                        볼거리 먹거리 즐길거리가 넘쳐나는
+                                        <br>
+                                        방콕으로 여행가자!
+                                        <br>
+                                    </span>
+                                    <p class="reservation_btn">예약하러가기</p>
+                                </div>
+                            </div>
+                            <div class="tema_detail_text_box">
+                                <img src="./img/tab-01-03.png" alt="">
+                                <div class="reservation_text">
+                                    <span class="country_name">베트남 다낭</span>
+                                    <span>
+                                        효도여행하면 베트남이 빠질 수 없지
+                                        <br>
+                                        관광 + 휴양 + 야시장까지!
+                                        <br>
+                                        다낭으로 여행가자!
+                                    </span>
+                                    <p class="reservation_btn">예약하러가기</p>
+                                </div>
+                            </div>
                         </li>
                         <li>
-                            <img src="./img/tab-01-02.png" alt="커피,퐁크러쉬,허니브레드">
-                            <img src="./img/tab-01-02.png" alt="커피,퐁크러쉬,허니브레드">
-                            <img src="./img/tab-01-02.png" alt="커피,퐁크러쉬,허니브레드">
+                            <div class="tema_detail_text_box">
+                                <img src="./img/tab-02-01.png" alt="">
+                                <div class="reservation_text">
+                                    <span class="country_name">북마리아나제도 사이판</span>
+                                    <span>
+                                        태평양 연안의 인기있는 휴양지!
+                                        <br>
+                                        세계 3대 다이빙 포인트에서
+                                        <br>
+                                        체험다이빙 할 수 있는
+                                        <br>
+                                        사이판으로 여행가자!</span>
+                                    <p class="reservation_btn">예약하러가기</p>
+                                </div>
+                            </div>
+                            <div class="tema_detail_text_box">
+                                <img src="./img/tab-02-02.png" alt="">
+                                <div class="reservation_text">
+                                    <span class="country_name">몰디브</span>
+                                    <span>
+                                        한없이 파란 바다와 자연 그대로의
+                                        <br>
+                                        깨끗한 하얀 모래사장!
+                                        <br>
+                                        물 위에 떠있는 숙소 꿈의 휴양지
+                                        <br>
+                                        몰디브로 여행가자!
+                                    </span>
+                                    <p class="reservation_btn">예약하러가기</p>
+                                </div>
+                            </div>
+                            <div class="tema_detail_text_box">
+                                <img src="./img/tab-02-03.png" alt="">
+                                <div class="reservation_text">
+                                    <span class="country_name">발리</span>
+                                    <span>
+                                        세계 1위의 허니문 여행지!
+                                        <br>
+                                        숲과 바다가 공존하는
+                                        <br>
+                                        자연을 느끼고 싶다면
+                                        <br>
+                                        신들의 섬 발리로 여행가자!
+                                    </span>
+                                    <p class="reservation_btn">예약하러가기</p>
+                                </div>
+                            </div>
                         </li>
                         <li>
-                            <img src="./img/tab-01-01.png" alt="커피,퐁크러쉬,허니브레드">
-                            <img src="./img/tab-01-02.png" alt="커피,퐁크러쉬,허니브레드">
-                            <img src="./img/tab-01-03.png" alt="커피,퐁크러쉬,허니브레드">
+                            <div class="tema_detail_text_box">
+                                <img src="./img/tab-03-01.png" alt="">
+                                <div class="reservation_text">
+                                    <span class="country_name">태국 파타야</span>
+                                    <span>
+                                        방콕과 가까워 도심 관광과 함께
+                                        <br>
+                                        자연속에서 라운딩까지 할 수 있는
+                                        <br>
+                                        파타야로 여행가자!
+                                    </span>
+                                    <p class="reservation_btn">예약하러가기</p>
+                                </div>
+                            </div>
+                            <div class="tema_detail_text_box">
+                                <img src="./img/tab-03-02.png" alt="">
+                                <div class="reservation_text">
+                                    <span class="country_name">북마리아나제도 사이판</span>
+                                    <span>
+                                        한없이 펼쳐진 수평선을 바라보며
+                                        <br>
+                                        상쾌한 기분을 느낄 수 있는
+                                        <br>
+                                        사이판으로 여행가자!
+                                    </span>
+                                    <p class="reservation_btn">예약하러가기</p>
+                                </div>
+                            </div>
+                            <div class="tema_detail_text_box">
+                                <img src="./img/tab-03-03.png" alt="">
+                                <div class="reservation_text">
+                                    <span class="country_name">코타키나발루</span>
+                                    <span>
+                                        자연 보호구역에서
+                                        <br>
+                                        특별한 라운딩을 할 수 있는
+                                        <br>
+                                        코타키나발루 여행가자!
+                                    </span>
+                                    <p class="reservation_btn">예약하러가기</p>
+                                </div>
+                            </div>
                         </li>
                         <li>
-                            <img src="./img/tab-01-01.png" alt="커피,퐁크러쉬,허니브레드">
-                            <img src="./img/tab-01-02.png" alt="커피,퐁크러쉬,허니브레드">
-                            <img src="./img/tab-01-03.png" alt="커피,퐁크러쉬,허니브레드">
-                        </li>
-                        <li>
-                            <img src="./img/tab-01-01.png" alt="커피,퐁크러쉬,허니브레드">
-                            <img src="./img/tab-01-02.png" alt="커피,퐁크러쉬,허니브레드">
-                            <img src="./img/tab-01-03.png" alt="커피,퐁크러쉬,허니브레드">
+                            <div class="tema_detail_text_box">
+                                <img src="./img/tab04-01.png" alt="">
+                                <div class="reservation_text">
+                                    <span class="country_name">필리핀 세부</span>
+                                    <span>
+                                        거대한 고래상어와 함께
+                                        <br>
+                                        수영하는 특별한 경험
+                                        <br>
+                                        아바타 배경지 투말록폭포까지
+                                        <br>
+                                        세부로 여행가자!
+                                    </span>
+                                    <p class="reservation_btn">예약하러가기</p>
+                                </div>
+                            </div>
+                            <div class="tema_detail_text_box">
+                                <img src="./img/tab-04-02.png" alt="">
+                                <div class="reservation_text">
+                                    <span class="country_name">태국 치앙마이</span>
+                                    <span>
+                                        다치거나 은퇴한 코끼리들을
+                                        <br>
+                                        보호해주기 위해 생성된 프로그램!
+                                        <br>
+                                        코끼리와 목욕할 수 있는
+                                        <br>
+                                        치앙마이로 여행가자!
+                                    </span>
+                                    <p class="reservation_btn">예약하러가기</p>
+                                </div>
+                            </div>
+                            <div class="tema_detail_text_box">
+                                <img src="./img/tab-04-03.png" alt="">
+                                <div class="reservation_text">
+                                    <span class="country_name">호주 로트네스트 아일랜드</span>
+                                    <span>
+                                        요즘 핫한 쿼카 만나러가자!
+                                        <br>
+                                        쿼카가 서식하는 로트네스트 섬!
+                                        <br>
+                                        9~11월엔 혹동고래 관찰도 가능
+                                        <br>
+                                        호주로 여행가자!
+                                    </span>
+                                    <p class="reservation_btn">예약하러가기</p>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
