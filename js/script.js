@@ -6,7 +6,7 @@ const slider = document.querySelector('.slider_box');
 // width가 큰 모든 sliderContent가 들어있음
 const buttonContainer = document.querySelector('.dot_container');
 // dot 만들기 위한 dot 컨테이너라고 보면 됨
-const sliderWidth = 1920;
+const sliderWidth = window.innerWidth;
 // 슬라이더 한 장 한 장의 크기
 const sliderLength = slider.childElementCount;
 //ul의 자식의 갯수
@@ -45,8 +45,9 @@ slider.style.width = slider.childElementCount * sliderWidth + 'px';
 
 let index = 1;
 // 처음 브라우저를 열었을 때 보이는 슬라이더의 인덱스는 1이어야 하니까 1을 대입함
-container.children[0].style.transform = 'translateX(-' + (index * 1920) + 'px)';
+slider.style.transform = 'translateX(-' + (index * sliderWidth) + 'px)';
 
+// window.addEventListener("resize",sliderWidth);
 buttons.children[0].addEventListener('click', prev);
 buttons.children[1].addEventListener('click', next);
 
@@ -119,13 +120,13 @@ function updateButtons() {
 function moveSlider(time) {
     // 매개변수로 써줘서 인수로 time을 넣어줌(어디에 넣든 값을 바꿀 수 있도록)
     slider.style.transition = time + 'ms';
-    container.children[0].style.transform = 'translateX(-' + (index * 1920) + 'px)';
+    container.children[0].style.transform = 'translateX(-' + (index * sliderWidth) + 'px)';
     updateButtons();
 }
 
-setInterval(() => {
-    next();
-}, 3000);
+// setInterval(() => {
+//     next();
+// }, 3000);
 
 
 

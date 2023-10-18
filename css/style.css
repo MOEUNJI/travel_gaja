@@ -80,6 +80,19 @@
     display: flex;
 }
 
+.slider_box > li,
+.slider_box > li > img {
+    width: 100vw ;
+    height: 100vh;
+
+}
+
+.slide_img_01 {
+    background-image: url(/img/jp_slide.png);
+    width:100%;
+    height: 100%;
+}
+
 .slide_text {
     position: absolute;
     bottom: 150px;
@@ -232,6 +245,9 @@
     background: #242424;
     width: 100%;
     color: #fff;
+    background-image: url(/img/tema_tab_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .tema_tab_container {
@@ -259,8 +275,8 @@
 }
 
 .tab_img_content li > img {
-    width: 280px;
-    height: 280px;
+    width: 290px;
+    height: 290px;
 }
 
 .tema_img_box .tab_active {
@@ -343,3 +359,8 @@
 }
 
 /* TEMA 여행지 영역 끝 */
+
+/* PACAGE 여행 영역 시작 */
+.package {
+    background-image: url(/img/package_bg.png);
+}
